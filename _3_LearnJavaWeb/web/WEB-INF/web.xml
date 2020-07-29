@@ -3,4 +3,71 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <context-param>
+        <param-name>admin</param-name>
+        <param-value>root</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>_1_HelloServlet</servlet-name>
+        <servlet-class>_1_servlet._1_HelloServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>_2_HelloServlet</servlet-name>
+        <servlet-class>_1_servlet._2_HelloServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>_3_ServletConfig</servlet-name>
+        <servlet-class>_1_servlet._3_ServletConfig</servlet-class>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>hbx</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>_4_ServletContext</servlet-name>
+        <servlet-class>_1_servlet._4_ServletContext</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>_5_HttpServletRequest</servlet-name>
+        <servlet-class>_1_servlet._5_HttpServletRequest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>_6_Servlet1</servlet-name>
+        <servlet-class>_1_servlet._6_request_dispatcher._6_Servlet1</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>_6_Servlet2</servlet-name>
+        <servlet-class>_1_servlet._6_request_dispatcher._6_Servlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>_1_HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>_2_HelloServlet</servlet-name>
+        <url-pattern>/hello2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>_3_ServletConfig</servlet-name>
+        <url-pattern>/hello3</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>_4_ServletContext</servlet-name>
+        <url-pattern>/hello4</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>_5_HttpServletRequest</servlet-name>
+        <url-pattern>/hello5</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>_6_Servlet1</servlet-name>
+        <url-pattern>/hello6_1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>_6_Servlet2</servlet-name>
+        <url-pattern>/hello6_2</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
