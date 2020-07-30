@@ -40,6 +40,10 @@
         <servlet-name>_6_Servlet2</servlet-name>
         <servlet-class>_1_servlet._6_request_dispatcher._6_Servlet2</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>_7_ResponseServlet</servlet-name>
+        <servlet-class>_1_servlet._7_ResponseServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>_1_HelloServlet</servlet-name>
         <url-pattern>/hello</url-pattern>
@@ -68,6 +72,9 @@
         <servlet-name>_6_Servlet2</servlet-name>
         <url-pattern>/hello6_2</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>_7_ResponseServlet</servlet-name>
+        <url-pattern>/hello7</url-pattern>
+    </servlet-mapping>
 
 </web-app>
